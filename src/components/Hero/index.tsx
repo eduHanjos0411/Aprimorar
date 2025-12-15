@@ -1,9 +1,10 @@
+import { LogoHero } from './_components/LogoHero'
 import './hero.css'
 
 export function Hero() {
   return (
     <section id="inicio" className="hero-section">
-      <p>Aprimorar</p>
+      <LogoHero/>
     </section>
   )
 }
