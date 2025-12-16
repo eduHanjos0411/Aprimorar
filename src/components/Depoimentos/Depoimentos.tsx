@@ -1,3 +1,4 @@
+import { useReveal } from "../../hooks/useReveal"
 import { DepoimentoCard } from "./_components/DepoimentosCard"
 import "./depoimentosStyle.css"
 
@@ -27,6 +28,8 @@ const depoimentos = [
 ]
 
 export function Depoimentos() {
+  useReveal()
+  
   return (
     <section
       className="depoimentos-section"
