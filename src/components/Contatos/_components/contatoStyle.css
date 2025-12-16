@@ -1,0 +1,106 @@
+.contato-section {
+  padding: 2rem;
+  background-color: var(--gray-bg);
+}
+
+.contato-header {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.contato-header h2 {
+  font-family: var(--title-font);
+  font-size: 2.2rem;
+  color: var(--blue-primary);
+  margin-bottom: 1rem;
+}
+
+.contato-header p {
+  font-family: var(--text-font);
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.contato-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* MAPA */
+.contato-mapa img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato-mapa:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* INFORMAÇÕES */
+.contato-info {
+  font-style: normal;
+  font-family: var(--text-font);
+  color: var(--text-dark);
+}
+
+.contato-nome {
+  font-family: var(--title-font);
+  font-weight: 600;
+  color: var(--blue-primary);
+  margin-bottom: 1rem;
+}
+
+.contato-info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contato-info a {
+  color: var(--blue-secondary);
+  text-decoration: none;
+}
+
+.contato-info a:hover {
+  text-decoration: underline;
+}
+
+.contato-cta {
+  margin-top: 2rem;
+}
+
+.contato-horarios {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.contato-horarios strong {
+  color: var(--text-dark);
+}
+
+
+/* ======================
+   MOBILE
+   ====================== */
+@media (max-width: 768px) {
+  .contato-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-mapa {
+    order: 2;
+  }
+
+  .contato-info {
+    order: 1;
+    text-align: center;
+  }
+}
