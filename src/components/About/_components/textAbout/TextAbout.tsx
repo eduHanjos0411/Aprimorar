@@ -13,14 +13,13 @@ export function TextAbout() {
 
       <p>
         Hoje, o Aprimorar está localizado na Asa Sul, conta com inúmeros alunos
-        satisfeitos e uma comunidade de mais de <strong>9.000 seguidores</strong>
-        no Instagram. Cada passo dessa trajetória reforça o propósito de fazer
+        satisfeitos e uma comunidade de mais de <strong>9.000 seguidores</strong> no Instagram. Cada passo dessa trajetória reforça o propósito de fazer
         diferença real na vida de quem passa por aqui, utilizando o
         aprimoramento como ferramenta para deixar uma marca duradoura.
       </p>
 
       <p>
-        O <strong>Aprimorar – Espaço Multidisciplinar de Aprendizagem</strong> foi
+        O <strong>Aprimorar - Espaço Multidisciplinar de Aprendizagem</strong> foi
         criado para ajudar cada aluno a desenvolver seu próprio método de
         estudo, potencializando seus conhecimentos e superando dificuldades que
         impactam o aprendizado. O acompanhamento é individualizado, focado nas
