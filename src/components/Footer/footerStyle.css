@@ -1,0 +1,105 @@
+.footer::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--blue-primary),
+    var(--orange-primary)
+  );
+}
+
+
+.footer {
+  background-color: var(--white);
+  color: var(--text-dark);
+
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+/* MARCA */
+.footer-brand img {
+  width: 256px;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  font-family: var(--title-font);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ENDEREÇO */
+.footer-address {
+  font-style: normal;
+  font-family: var(--text-font);
+  font-size: 0.95rem;
+}
+
+.footer-address a {
+  color: var(--blue-primary);
+  text-decoration: none;
+}
+
+.footer-address a:hover {
+  color: var(--orange-primary);
+  text-decoration: underline;
+}
+
+/* NAVEGAÇÃO */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-nav a {
+  color: var(--blue-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+  color: var(--orange-primary);
+  text-decoration: underline;
+}
+
+/* SOCIAL */
+.footer-social a {
+  color: var(--blue-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: var(--orange-primary);
+  text-decoration: underline;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: right;
+  font-size: 0.85rem;
+  padding: 0 3rem 1rem 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-nav {
+    align-items: center;
+  }
+}
