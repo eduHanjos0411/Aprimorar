@@ -1,0 +1,40 @@
+.depoimento-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.depoimento-avatar img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.depoimento-content h3 {
+  font-family: var(--title-font);
+  font-size: 1.1rem;
+  color: var(--blue-primary);
+}
+
+.idade {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+blockquote {
+  font-family: var(--text-font);
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.depoimento-data {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
