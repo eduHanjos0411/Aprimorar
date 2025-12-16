@@ -1,12 +1,15 @@
 .about-section {
-  margin: 5vh auto;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
   max-width: 1200px;
+
   display: grid;
   grid-template-columns: 1fr 420px;
   grid-template-rows: auto 1fr;
   gap: 3rem;
   align-items: center;
 }
+
 
 /* Título */
 .header {
@@ -67,4 +70,36 @@
 
 .delay-2 {
   transition-delay: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+
+  .header {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .side-image-about {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .main-text-about {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0;
+    text-align: left;
+  }
+
+  .side-image-about img {
+    max-width: 260px;
+  }
 }
