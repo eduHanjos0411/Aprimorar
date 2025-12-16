@@ -42,6 +42,15 @@
   transform: translateY(0);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+
 /* Respeita acessibilidade */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
