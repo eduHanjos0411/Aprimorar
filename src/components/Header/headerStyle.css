@@ -1,0 +1,82 @@
+body {
+  font-family: var(--text-font);
+  color: var(--text-dark);
+  background-color: var(--white);
+}
+
+h1, h2, h3 {
+  font-family: var(--title-font);
+  font-weight: var(--title-weight);
+  color: var(--blue-primary);
+}
+
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-logo {
+  width: 80px;
+  height: auto;
+}
+
+/* Navegação desktop */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Botão hamburger (hidden no desktop) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--blue-primary);
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 2rem 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .header-nav.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}

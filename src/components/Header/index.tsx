@@ -1,7 +1,8 @@
-import { CtaButton } from "./_components/CtaButton/CtaButton";
+import { useState } from "react";
+import { CtaButton } from "../CtaButton/CtaButton";
 import { NavItem } from "./_components/NavItem/NavItem";
 
-import './header.css'
+import './headerStyle.css'
 
 interface NavItemProps {
   id: number
@@ -28,20 +29,33 @@ const NavItems: NavItemProps[] = [
 ]
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="header-container">
-      <img className="header-logo">
+      <a href="#top" aria-label="Página inicial Aprimorar">
+        <img
+          className="header-logo"
+          src="LogoSemTexto.png"
+          alt="Aprimorar Espaço Multidisciplinar de Aprendizagem"
+        />
+      </a>
 
-      </img>
-      <nav className="header-nav">
-        {NavItems.map((item) => {
-          return (
-            <NavItem key={item.id} href={item.href} text={item.text}/>
-          )
-        })}
-        <CtaButton/>
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Abrir menu de navegação"
+        aria-expanded={menuOpen}
+      >
+        ☰
+      </button>
+
+      <nav className={`header-nav ${menuOpen ? "open" : ""}`}>
+        {NavItems.map(item => (
+          <NavItem key={item.id} href={item.href} text={item.text} />
+        ))}
+        <CtaButton />
       </nav>
     </header>
-  )
+  );
 }
