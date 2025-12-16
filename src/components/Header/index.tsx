@@ -23,8 +23,8 @@ const NavItems: NavItemProps[] = [
   },
   {
     id: 3,
-    href: "#aprovacoes",
-    text: "Aprovações",
+    href: "#depoimentos",
+    text: "depoimentos",
   },
 ]
 
