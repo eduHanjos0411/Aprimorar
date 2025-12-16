@@ -1,0 +1,31 @@
+.depoimentos-section {
+  background-color: var(--gray-bg);
+  padding: 6rem 1.5rem;
+}
+
+.depoimentos-header {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.depoimentos-header h2 {
+  font-family: var(--title-font);
+  font-size: 2.2rem;
+  color: var(--blue-primary);
+  margin-bottom: 1rem;
+}
+
+.depoimentos-header p {
+  font-family: var(--text-font);
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
